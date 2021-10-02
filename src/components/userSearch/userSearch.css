@@ -1,0 +1,61 @@
+/* POPUP CSS */
+.channel-popup-main-div1 {
+    /* position: fixed;
+    top: 50px;
+    left: 328px;
+    width: 450px;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+    position: fixed;
+    /* top: 0px; */
+    left: 332px;
+    width: 445px;
+    height: 40.5vh;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .channel-popup-main-div1 .channel-popup-inner-div1 {
+    border: 1px solid black;
+    overflow-y: scroll;
+    top: 0px;
+    position: relative;
+    /* padding: 12px; */
+    width: 1030px;
+    line-height: 1.6;
+    height: 40vh;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 1px 2px 1px #aaaaaa;
+  }
+  .profileImg img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+}
+.comment-main-div1{
+    color: rgb(7, 7, 7);
+  padding-right: px;
+  border: 1px solid rgb(206, 206, 206);
+  margin: 5px;
+  width: 98%;
+  display: flex;
+}
+.profileName{
+    padding-bottom: 20px;
+margin-top: 20px;
+}
+.followBtn1
+    {
+   position: absolute;
+      right: 0;
+      
+        margin-top: 20px;
+        margin-right: 10px;
+    }

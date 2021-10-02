@@ -1,0 +1,246 @@
+.profile{
+    display: flex;
+}
+
+.profileRight{
+    flex: 9;
+}
+
+.profileCover{
+    height: 320px;
+    position: relative;
+}
+
+.profileCoverImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profileUserImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    border: 3px solid white;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profileInfoName{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profileInfoDesc{
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.profileRightBottom{
+    display: flex;
+}
+.profilebtn{
+    margin-bottom: 10px;
+}
+
+/* POPUP CSS */
+
+
+
+.channel-popup-main-div {
+    position: fixed;
+    top: 80px;
+    left: 350px;
+    width: 50%;
+    height: 80vh;
+    /* background-color: rgba(231, 231, 231, 0.644); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .channel-popup-main-div .channel-popup-inner-div {
+    position: relative;
+    padding: 12px;
+    width: 1030px;
+    line-height: 1.6;
+    height: 80vh;
+    /* background: rgb(255, 255, 255); */
+    /* box-shadow: 2px 1px 2px 1px #aaaaaa; */
+  }
+  .close-btn {
+  float: right;
+  width: 29px;
+  height: 21px;
+  background-color: red;
+  border: 1px solid rgb(197, 197, 197);
+  color: rgb(114, 114, 114);
+  }
+  .close-btn:hover {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(197, 197, 197);
+  color: rgb(90, 90, 90);
+  }
+  .close-btn:focus {
+  background: rgb(231, 227, 228);
+  }
+  .channel-popup-inner-div .popup-icon {
+  padding: 5px;
+  }
+  
+  .channel-popup-inner-div .popup-text {
+  padding: 0px 0px 0px 9px;
+  font-size: 23px;
+  color: rgb(88, 88, 88);
+  }
+
+   /* POPUPFORM CSS */
+   .user-registration-wrapper{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light);
+}
+.user-registration-wrapper .user-registration-sub-wrapper{
+    /* height: auto; */
+    margin-top: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-large);
+    transition: 0.3s ease-in;
+    background-color: var(--light-col);
+}
+.user-registration-wrapper .user-registration-sub-wrapper:hover{
+    transform:scale(1.04);
+}
+.user-registration.heading-wrapper{
+    font-weight: 350;
+    display: flex;
+    justify-content: left;
+    /* margin-top: 2rem; */
+    margin-bottom: 1rem;
+}
+.user-registration-field-wrapper{
+    width: 100%;
+    background-color: var(--light-col);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.field-wrapper h4{
+    font-size: 1rem;
+    font-weight: 300;
+    /* margin-bottom: 2rem; */
+}
+.user-registration-wrapper .button-wrapper{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in;
+    background-color: var(--dark-col);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.user-registration-wrapper .button-wrapper:hover{
+    background-color: var(--light-btn);
+}
+.user-registration-wrapper .button-wrapper a{
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+/* POPUP2 */
+
+.followersPopupDiv {
+    position: fixed;
+    top: 90px;
+    left: 350px;
+    width: 50%;
+    height: 80vh;
+    /* background-color: rgba(231, 231, 231, 0.644); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .followersPopupDiv .followersPopupInnerDiv {
+    overflow-y: scroll;
+    position: relative;
+    padding: 12px;
+    width: 450px;
+    line-height: 1.6;
+    height: 80vh;
+    background: white;
+    box-shadow: 2px 1px 2px 1px #aaaaaa;
+  }
+  .close-btn1 {
+  float: right;
+  width: 29px;
+  height: 21px;
+  background-color: red;
+  border: 1px solid rgb(197, 197, 197);
+  color: rgb(114, 114, 114);
+  }
+  .close-btn1:hover {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(197, 197, 197);
+  color: rgb(90, 90, 90);
+  }
+  .close-btn1:focus {
+  background: rgb(231, 227, 228);
+  }
+  .usersView{
+    margin: 5px;
+     margin-top: 10px;
+    color: rgb(7, 7, 7);
+  padding-right: px;
+  border: 1px solid rgb(206, 206, 206);
+
+  width: 98%;
+  display: flex;
+  }
+  .profileName1{
+    padding-bottom: 20px;
+  margin-top: 20px;
+  }
+  .followBtn2
+    {
+      right: 0;
+      
+      margin-top: 20px;
+      margin-right: 10px;
+   position: absolute;
+     
+    }
+    .profileImg2 img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-top: 3px;
+      }
+      .popupHeading1{
+        margin-top: 30px;
+          text-align: center;
+
+      }

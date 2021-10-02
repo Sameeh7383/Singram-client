@@ -1,0 +1,148 @@
+ .sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: hidden;
+    margin-right: 15px;
+    position: sticky;
+    top: 50px;
+    max-width: 260px;
+    padding: 15px;
+  }
+  .main-wrap{
+    
+    min-height: 500px;
+    width:100%;
+    box-shadow: 1px 3px 9px -1px rgba(53,53,53,0.69);
+-webkit-box-shadow: 1px 3px 9px -1px rgba(53,53,53,0.69);
+-moz-box-shadow: 1px 3px 9px -1px rgba(53,53,53,0.69);
+    border-radius: 30px;
+  } 
+  .top-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50%;
+    position:relative;
+  }
+ .cover-photo-div{
+   height: 110px;
+   background-color: rgb(212, 212, 212);
+   border-radius: 30px;
+   min-width: 100%;
+
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-photo{
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  margin-top:-50px;
+  border: 3px solid #ffff;
+}
+.profile-name{
+  font-family: roboto,sans-serif;
+text-transform: capitalize;
+font-size: 1.2rem;
+margin: 5px;
+}
+.profile-rating{
+  font-size: 0.8rem;
+  color:rgb(177, 174, 174);
+  text-transform: capitalize;
+  font-family: roboto,sans-serif;
+ margin-bottom: 3px;
+
+}
+.sidebar-hr{
+  margin: 5px;
+  width: 80%;
+}
+.bottom-wrapper{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding:0px 20px;
+  flex-direction: column;
+  position: relative;
+  height:50%;
+}
+.follow-div{
+background:rgb(185, 185, 185);
+height:50px;
+width:100%;
+border-radius: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ 
+margin-bottom: 10px;
+}
+.follow-title{
+  font-family: roboto,sans-serif;
+  text-transform: capitalize;
+   margin-left: 20px;
+  color:rgb(245, 245, 245);
+  
+}
+.follow-count{
+  margin-right: 20px;
+  font-family: roboto,sans-serif;
+  text-transform: capitalize;
+  color:#fff;
+}
+
+
+  /* ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+  }
+  
+  .sidebarWrapper {
+    padding: 20px;
+  }
+  
+  .sidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebarIcon {
+    margin-right: 15px;
+  }
+  
+  .sidebarButton {
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .sidebarHr {
+    margin: 20px 0;
+  }
+  
+  .sidebarFriendList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+   */

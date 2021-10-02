@@ -1,0 +1,177 @@
+.share {
+    width: 100%;
+    /* height: 170px; */
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  }
+  
+  .shareWrapper {
+    padding: 10px;
+  }
+  
+  .shareTop {
+    display: flex;
+    align-items: center;
+  }
+  
+  .shareProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .shareInput {
+    border: none;
+    width: 80%;
+  }
+  
+  .shareInput:focus {
+    outline: none;
+  }
+  
+  .shareHr {
+    margin: 20px;
+  }
+  
+  .shareBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .shareOptions{
+      display: flex;
+      margin-left: 20px;
+  }
+  
+  .shareOption{
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+  
+  .shareIcon{
+      font-size: 18px;
+      margin-right: 3px;
+  }
+  
+  .shareOptionText{
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  .shareButton{
+      border: none;
+      padding: 7px;
+      border-radius: 5px;
+      background-color: white;
+      font-weight: 500;
+      margin-right: 20px;
+      border: 1px solid green;
+      border-radius: 4px;
+      cursor: pointer;
+      color: green;
+      margin-top: 10px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: bold;
+  }
+.videoView{
+  padding: 0 20px 10px 20px;
+  position: relative;
+
+}
+.videoPreview{
+  width: 100%;
+  object-fit: cover;
+
+}
+.cancelVideo{
+  position: absolute;
+  top: 0;
+  right: 20;
+  cursor: pointer;
+  opacity:0.7
+}
+.loginInput:focus{
+  outline: none;
+}
+.loginBox{
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-registration-wrapper{
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+.user-registration-wrapper .user-registration-sub-wrapper{
+  height: auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-large);
+  transition: 0.3s ease-in;
+  background-color: var(--light-col);
+}
+.user-registration-wrapper .user-registration-sub-wrapper:hover{
+  transform:scale(1.04);
+}
+.user-registration-wrapper .heading-wrapper{
+  font-weight: 350;
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.user-registration-field-wrapper{
+  width: 100%;
+  background-color: var(--light-col);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: .2rem 0;
+}
+.field-wrapper h4{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.user-registration-wrapper .button-wrapper{
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+  background-color: var(--dark-col);
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.user-registration-wrapper .button-wrapper:hover{
+  background-color: var(--light-btn);
+}
+.user-registration-wrapper .button-wrapper a{
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+#valid-checkbox {
+  margin: 10px;
+}
