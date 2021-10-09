@@ -8,7 +8,7 @@ export default function Conversation({chat}) {
   useEffect(() => {
     const recieverId=chat.members.find(member=> member != loginUser[0].userData._id)
     console.log(recieverId)
-    axios.get("http://localhost:5000/api/v1/getUser/"+recieverId).then((result)=>{
+    axios.get(api+"/api/v1/getUser/"+recieverId).then((result)=>{
      console.log(result.data);
      setUser(result.data)
     })

@@ -46,7 +46,7 @@ export default function AddPost({renderPosts}) {
     formData.append("valuation", valuation);
     
     console.log(formData, "dataaaaaaaaaaaaaaaaaaa");
-    fetch("http://localhost:5000/api/v1/post/setProfilePic", {
+    fetch(api+"/api/v1/post/setProfilePic", {
       method: "POST",
       body: formData,
       //   headers: {

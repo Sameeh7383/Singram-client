@@ -71,7 +71,7 @@ export default function RenderCropper({ handleCropper,userId,proPic,renderProfil
 		let formData = new FormData();
 		formData.append("file",convertedUrlToFile);
 		console.log(userId)
-		axios.post("http://localhost:5000/api/v1/editProPic/"+userId,formData).then((result)=>{
+		axios.post(api+"/api/v1/editProPic/"+userId,formData).then((result)=>{
 			renderProfile()
     //  setUser(result.data)
     //  setPopup(false)

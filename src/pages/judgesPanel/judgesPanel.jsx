@@ -68,13 +68,13 @@ export default function JudgesPanel() {
       setPage(newPage);
     };
     const renderPosts=()=>{
-        axios.get("http://localhost:5000/api/v1/admin/getValuationPosts").then((result)=>{
+        axios.get(api+"/api/v1/admin/getValuationPosts").then((result)=>{
             setRows(result.data)
           })
     }
   const showPost=(id)=>{
     // alert("hey")
-    axios.get("http://localhost:5000/api/v1/admin/getPost/"+id).then((result)=>{
+    axios.get(api+"/api/v1/admin/getPost/"+id).then((result)=>{
         setPost(result.data)
       })
   }
@@ -83,7 +83,7 @@ export default function JudgesPanel() {
       setPage(0);
     };
     useEffect(() => {
-      axios.get("http://localhost:5000/api/v1/post/getValuationPosts").then((result)=>{
+      axios.get(api+"/api/v1/post/getValuationPosts").then((result)=>{
         //   alert(result.data)
         setRows(result.data)
       })

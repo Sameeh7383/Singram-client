@@ -12,7 +12,7 @@ export default function SideBar() {
   const[followingCount,setFollowingCount]=useState(0)
   useEffect(() => {
     axios
-    .get("http://localhost:5000/api/v1/UserProfileCard/"+user.userData._id)
+    .get(api+"/api/v1/UserProfileCard/"+user.userData._id)
     .then((data) => {
       setProfile(data.data)   
       setFollowCount(data.data.followers.length)

@@ -62,7 +62,7 @@ export default function Signup() {
         body: JSON.stringify(userInfo),
       };
       console.log(userInfo);
-      fetch("http://localhost:5000/api/v1/signUp", requestOptions)
+      fetch(api+"/api/v1/signUp", requestOptions)
         .then(response => response.json())
         .then((data) => {
           // alert(data);

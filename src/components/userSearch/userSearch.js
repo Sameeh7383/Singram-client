@@ -5,7 +5,7 @@
 
 // export default function UserSearch({searchData}) {
 //   follow=()=>{
-//     axios.get("http://localhost:5000/api/v1/searchProfile/"+searchKey).then((data)=>{
+//     axios.get(api+"/api/v1/searchProfile/"+searchKey).then((data)=>{
       
 //     })
 //   }

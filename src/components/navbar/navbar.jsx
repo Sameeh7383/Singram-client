@@ -72,7 +72,7 @@ export default function Navbar() {
   const logout = async () => {
     console.log(subscription)
     if(subscription){
-      await axios.put("http://localhost:5000/api/v1/logout/" + user.userData._id, {
+      await axios.put(api+"/api/v1/logout/" + user.userData._id, {
         subscription: subscription,
       })
     } 
@@ -88,7 +88,7 @@ const blurEvent=() => {
 }
 const follow=(id)=>{
   axios
-    .put("http://localhost:5000/api/v1/followUser/" + id, {
+    .put(api+"/api/v1/followUser/" + id, {
       userId: user.userData._id,
     }).then((data)=>{
       setSelect(false);
@@ -101,10 +101,10 @@ const follow=(id)=>{
 }
 
 const handleSearch=() => {
-  searchCategory=="music" ? axios.get("http://localhost:5000/api/v1/post/searchPost/"+searchKey).then((response) =>{
+  searchCategory=="music" ? axios.get(api+"/api/v1/post/searchPost/"+searchKey).then((response) =>{
     setSearchResult(response.data)
   }):
- axios.get("http://localhost:5000/api/v1/searchProfile/"+searchKey).then((response) =>{
+ axios.get(api+"/api/v1/searchProfile/"+searchKey).then((response) =>{
   setSearchUser(response.data)
   })
 }

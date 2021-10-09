@@ -42,7 +42,7 @@ export default function Login() {
         body: JSON.stringify(userInfo),
       };
       // console.log(userInfo);
-      fetch("http://localhost:5000/api/v1/login", requestOptions)
+      fetch(api+"/api/v1/login", requestOptions)
         .then(response => response.json())
         .then(async (data) => {
           // alert(data);

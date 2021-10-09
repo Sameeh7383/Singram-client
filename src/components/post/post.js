@@ -43,13 +43,13 @@ const handleToggle = () => {
   var result;
 const deletePost=(id,url)=>{
   
-  axios.put("http://localhost:5000/api/v1/post/deletePost/"+id, { url:url}).then((data)=>{
+  axios.put(api+"/api/v1/post/deletePost/"+id, { url:url}).then((data)=>{
         renderPosts()
         setOpen(false);
       });
 }
 const editPost=(id)=>{
-  axios.get("http://localhost:5000/api/v1/post/getPost/"+id).then((data)=>{
+  axios.get(api+"/api/v1/post/getPost/"+id).then((data)=>{
         result=data.data
       }).then(()=>{
         setName(result.name)
@@ -65,7 +65,7 @@ const handleFormSubmit= async (e) => {
   var data={
     name,sources,category,description
   }
-  axios.post("http://localhost:5000/api/v1/post/editPost/"+userData.post._id,data).then(()=>{
+  axios.post(api+"/api/v1/post/editPost/"+userData.post._id,data).then(()=>{
     renderPosts()
    setPopup(false)
   })
@@ -99,7 +99,7 @@ const handleFormSubmit= async (e) => {
 
 const countView=()=>{
   try {
-      axios.put("http://localhost:5000/api/v1/post/countViews/"+userData.post._id, { userId:user._id}).then(()=>{
+      axios.put(api+"/api/v1/post/countViews/"+userData.post._id, { userId:user._id}).then(()=>{
         setView(view+1)
       });
      } catch (err) {}
@@ -113,14 +113,14 @@ useEffect(() => {
 
 const likeHandler = () => {
   try {
-    axios.put("http://localhost:5000/api/v1/post/like/"+userData.post._id, { userId:user._id});
+    axios.put(api+"/api/v1/post/like/"+userData.post._id, { userId:user._id});
   } catch (err) {}
   setLike(isLiked ? like - 1 : like + 1);
   setIsLiked(!isLiked);
 };
  const commentHandler=(comment)=>{
 try{
-  axios.put("http://localhost:5000/api/v1/post/comment/"+userData.post._id, { user:{userId:user._id,userName:user.UserName},comment:comment}).then((data)=>{
+  axios.put(api+"/api/v1/post/comment/"+userData.post._id, { user:{userId:user._id,userName:user.UserName},comment:comment}).then((data)=>{
     console.log(data)
     document.getElementById(userData.post._id).value=""
     userData.post.comments.push(data.data.comments)

@@ -9,7 +9,7 @@ export default function OnlineChats({socketUsers,loginUser,currentChat}) {
   const[online,setOnline]=useState(socketUsers)
   const[user,setUser]=useState(loginUser)
   useEffect(() => 
-  axios.get("http://localhost:5000/api/v1/userFollowings/"+user).then((response) => {
+  axios.get(api+"/api/v1/userFollowings/"+user).then((response) => {
     setFollowings(response.data)
   }),[user])
 

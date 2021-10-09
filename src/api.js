@@ -1,1 +1,1 @@
-export var api="http://localhost:5000";
+export var api="http://3.109.139.28";

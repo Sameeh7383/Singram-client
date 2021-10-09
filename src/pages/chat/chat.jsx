@@ -66,14 +66,14 @@ useEffect(()=>{
   // setMessages((message)=>[...message,arrivalMsg])
 },[update])
 useEffect(() => {
-  axios.get("http://localhost:5000/api/v1/chat/"+loginUser._id).then((result)=>{
+  axios.get(api+"/api/v1/chat/"+loginUser._id).then((result)=>{
     setChats(result.data)
   console.log(result)
   })
    
 }, [loginUser])
 useEffect(() => {
-  axios.get("http://localhost:5000/api/v1/chat/chatMessage/"+currentChat?._id).then((result)=>{
+  axios.get(api+"/api/v1/chat/chatMessage/"+currentChat?._id).then((result)=>{
     setMessages(result.data)
   // console.log(result)
   })
@@ -107,7 +107,7 @@ const messageSubmit=async()=>{
   console.log(loginUser._id,reciever,sendMessage);
    await socket.current.emit("ping",{senderId:loginUser._id,recieverId:reciever,content:sendMessage})
    
-  axios.post("http://localhost:5000/api/v1/chat/message",{sender:loginUser._id,chat:currentChat._id,text:sendMessage,senderName:loginUser.UserName}).then((data)=>{
+  axios.post(api+"/api/v1/chat/message",{sender:loginUser._id,chat:currentChat._id,text:sendMessage,senderName:loginUser.UserName}).then((data)=>{
     console.log(data.data)
     // data.data.senderData.propic=senderPropic
   setMessages([...messages,data.data])

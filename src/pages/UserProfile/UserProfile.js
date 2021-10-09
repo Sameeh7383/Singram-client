@@ -92,7 +92,7 @@ export default  function Profile() {
     var data={
       UserName,Email,PhoneNumber,Dob,Gender,Website,Bio
     }
-    axios.post("http://localhost:5000/api/v1/updateProfile/"+user._id,data).then((result)=>{
+    axios.post(api+"/api/v1/updateProfile/"+user._id,data).then((result)=>{
      setUser(result.data)
      setPopup(false)
     //  c=true
@@ -100,7 +100,7 @@ export default  function Profile() {
   }
   const renderProfile=()=>{
     axios
-    .get("http://localhost:5000/api/v1/UserProfile/"+UserId)
+    .get(api+"/api/v1/UserProfile/"+UserId)
     .then(async (data) => {
       await setUser(data.data);
       setShowCropper(false)
@@ -128,7 +128,7 @@ export default  function Profile() {
     });
   }
   const removePropic=()=>{
-   axios.put("http://localhost:5000/api/v1/deletePropic/"+user._id,{url:user.propic}).then(()=>{
+   axios.put(api+"/api/v1/deletePropic/"+user._id,{url:user.propic}).then(()=>{
     renderProfile()
    })
   }
@@ -140,7 +140,7 @@ export default  function Profile() {
     const fetchUser = () => {
       try {
         axios
-          .get("http://localhost:5000/api/v1/UserProfile/"+UserId)
+          .get(api+"/api/v1/UserProfile/"+UserId)
           .then(async (data) => {
             await setUser(data.data);
            
@@ -174,14 +174,14 @@ const friendsView=(friends)=>{
 setPopup("friends")
 setPopupHeading(friends)
 friends=="FOLLOWINGS"?(
-  axios.get("http://localhost:5000/api/v1/userFollowings/"+user._id).then((result)=>{
+  axios.get(api+"/api/v1/userFollowings/"+user._id).then((result)=>{
      setUsersData(result.data)
      console.log(result.data);
      
     //  c=true
     })
 ):
-axios.get("http://localhost:5000/api/v1/userFollowers/"+user._id).then((result)=>{
+axios.get(api+"/api/v1/userFollowers/"+user._id).then((result)=>{
      setUsersData(result.data)
      console.log(result.data)
     })
@@ -191,7 +191,7 @@ axios.get("http://localhost:5000/api/v1/userFollowers/"+user._id).then((result)=
 
   const follow2=(id)=>{
     axios
-      .put("http://localhost:5000/api/v1/followUser/" + id, {
+      .put(api+"/api/v1/followUser/" + id, {
         userId: LoginUser.userData._id,
       }).then((data)=>{
         setSelect(false);
@@ -205,7 +205,7 @@ axios.get("http://localhost:5000/api/v1/userFollowers/"+user._id).then((result)=
 
   const follow = () => {
     axios
-      .put("http://localhost:5000/api/v1/followUser/" + UserId, {
+      .put(api+"/api/v1/followUser/" + UserId, {
         userId: LoginUser.userData._id,
       })
       .then((data) => {

@@ -11,7 +11,7 @@ export default function Feed({props,userPost}) {
   const [user, setUser]= useState(JSON.parse(localStorage.getItem("userData")));
   var a
   const renderPosts =async ()=>{
-    const posts=(props!="home"?(await axios.get("http://localhost:5000/api/v1/post/userPosts/"+props)):(await axios.get("http://localhost:5000/api/v1/post/explorePosts/"+user.userData._id)))
+    const posts=(props!="home"?(await axios.get(api+"/api/v1/post/userPosts/"+props)):(await axios.get(api+"/api/v1/post/explorePosts/"+user.userData._id)))
     // alert(posts.data)
     console.log(posts.data)
     setPosts(posts.data)
@@ -22,7 +22,7 @@ export default function Feed({props,userPost}) {
      
       console.log(posts1)
     
-        const posts=(props!="home"?(await axios.get("http://localhost:5000/api/v1/post/userPosts/"+props)):(await axios.get("http://localhost:5000/api/v1/post/explorePosts/"+user.userData._id)))
+        const posts=(props!="home"?(await axios.get(api+"/api/v1/post/userPosts/"+props)):(await axios.get(api+"/api/v1/post/explorePosts/"+user.userData._id)))
         // alert(posts.data)
         console.log(posts.data)
         setPosts(posts.data)
