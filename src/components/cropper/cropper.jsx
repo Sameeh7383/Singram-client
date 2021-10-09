@@ -4,7 +4,7 @@ import axios from "axios";
 import Cropper from "react-easy-crop";
 import Button from "@material-ui/core/Button";
 import CancelIcon from "@material-ui/icons/Cancel";
-import api from '../../api'
+import api from '../../api.js'
 import getCroppedImg, { generateDownload } from "../../cropHelpers/cropImage";
 import { IconButton, makeStyles } from "@material-ui/core";
 import { SnackbarContext } from "../snackbar/snackbar";

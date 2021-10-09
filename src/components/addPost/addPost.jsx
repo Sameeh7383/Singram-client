@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./addPost.css";
-import api from '../../api'
+import api from '../../api.js'
 import {
   MusicVideo,
   Cancel,

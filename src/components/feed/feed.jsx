@@ -3,7 +3,7 @@ import AddPost from "../addPost/addPost"
 import Post from "../post/post"
 import axios from "axios";
 import React, { useState,useEffect } from "react";
-import api from '../../api'
+import api from '../../api.js'
 export default function Feed({props,userPost}) {
   console.log(props)
   // const[profile1,setProfile]=useState(profile.profile)

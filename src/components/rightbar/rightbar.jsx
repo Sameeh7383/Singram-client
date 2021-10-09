@@ -1,6 +1,6 @@
 import React from 'react'
 import "./rightbar.css"
-import api from '../../api'
+import api from '../../api.js'
 
 export default function Rightbar({ profile }) {
     const HomeRightbar = () => {

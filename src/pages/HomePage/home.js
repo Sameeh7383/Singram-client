@@ -4,7 +4,7 @@ import SideBar from "../../components/sidebar/sideBar";
 import Feed from "../../components/feed/feed";
 import Rightbar from "../../components/rightbar/rightbar";
 import Navbar from "../../components/navbar/navbar";
-import api from '../../api'
+import api from '../../api.js'
 import "./home.css";
 export default function Home() {
   return (

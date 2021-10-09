@@ -10,7 +10,7 @@ import axios from "axios";
 import { makeStyles } from '@material-ui/core/styles';
 import CameraAltIcon from '@material-ui/icons/CameraAlt'; 
 import RenderCropper from "../../components/cropper/cropper";
-import api from '../../api';
+import api from '../../api.js';
 
 var b,c;
 

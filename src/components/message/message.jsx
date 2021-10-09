@@ -1,7 +1,7 @@
 import React from 'react'
 import './message.css'
 import { format } from "timeago.js";
-import api from '../../api'
+import api from '../../api.js'
 export default function Message({message,sender}) {
     // const senderPic=
     return (

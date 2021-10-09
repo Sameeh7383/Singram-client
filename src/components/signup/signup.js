@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { FormHelperText } from "@material-ui/core";
-import api from '../../api'
+import api from '../../api.js'
 
 export default function Signup() {
   const history = useHistory();

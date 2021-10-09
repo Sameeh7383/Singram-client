@@ -15,7 +15,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import SideBar from "../../components/sidebar/sideBar";
-import api from '../../api'
+import api from '../../api.js'
 const columns = [
     { id: 'postedBy', label: 'Posted User', minWidth: 170 ,align: 'center'},
     { id: 'name', label: 'Song Name', minWidth: 170,align: 'center' },

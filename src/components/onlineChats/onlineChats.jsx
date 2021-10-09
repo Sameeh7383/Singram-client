@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axios from "axios";
 import './onlineChats.css'
-import api from '../../api'
+import api from '../../api.js'
 export default function OnlineChats({socketUsers,loginUser,currentChat}) {
   console.log(socketUsers)
   const[followings,setFollowings]=useState([])

@@ -9,7 +9,7 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import { format } from "timeago.js";
 import ReactPlayer from "react-player";
 import axios from "axios";
-import api from '../../api'
+import api from '../../api.js'
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',

@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './conversation.css'
 import axios from "axios";
-import api from '../../api'
+import api from '../../api.js'
 export default function Conversation({chat}) {
   const[loginUser,setLoginUser]=useState(useState(JSON.parse(localStorage.getItem("userData"))))
   const[user,setUser]=useState(null)

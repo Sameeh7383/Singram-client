@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/navbar";
 import Message from "../../components/message/message";
 import OnlineChats from '../../components/onlineChats/onlineChats';
 import Conversation from '../../components/conversation/conversation';
-import api from '../../api'
+import api from '../../api.js'
 import './chat.css'
 import axios from "axios";
 import {io} from 'socket.io-client'

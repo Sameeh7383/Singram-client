@@ -4,7 +4,7 @@ import Rating from '@material-ui/lab/Rating';
 import Button from "@material-ui/core/Button"
 import axios from "axios";
 import {Link} from "react-router-dom";
-import api from '../../api'
+import api from '../../api.js'
 export default function SideBar() {
   const[user,setUser]=useState(JSON.parse(localStorage.getItem("userData")))
   const[profile,setProfile]=useState("")

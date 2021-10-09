@@ -1,5 +1,5 @@
 import React from 'react'
-import api from '../../api'
+import api from '../../api.js'
 export default function PostSearch() {
     return (
         <div className="post-search">
